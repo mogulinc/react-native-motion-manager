@@ -21,7 +21,7 @@ RCT_EXPORT_MODULE();
     if (self) {
         self->_motionManager = [[CMMotionManager alloc] init];
         //Gyroscope
-        if([self->_motionManager deviceMotionAvailable])
+        if([self->_motionManager isDeviceMotionAvailable])
         {
             NSLog(@"DeviceMotion available");
             /* Start the gyroscope if it is not active already */
