@@ -42,7 +42,6 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(startDeviceMotionUpdates) {
     NSLog(@"startDeviceMotionUpdates");
-    [self->_motionManager startDeviceMotionUpdates];
 
     /* Receive the device motion data on this block */
     [self->_motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
